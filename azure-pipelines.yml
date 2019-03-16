@@ -23,7 +23,7 @@ steps:
   
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)\nextone\dist'
+    SourceFolder: '$(System.DefaultWorkingDirectory)/nextone/dist'
     Contents: |
       index.html
       favicon.ico
