@@ -24,12 +24,8 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)/dist/nextone'
-    Contents: |
-      index.html
-      favicon.ico
-      **\*.js
-      **\*.css
-      package.json
+    Contents: | 
+      *
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
